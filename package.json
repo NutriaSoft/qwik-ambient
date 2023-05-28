@@ -1,6 +1,6 @@
 {
-  "name": "my-qwik-library-name",
-  "version": "0.0.1",
+  "name": "qwik-ambient",
+  "version": "0.1.1",
   "description": "Create a reusable Qwik component library",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
@@ -26,6 +26,7 @@
     "build.lib": "vite build --mode lib",
     "build.types": "tsc --emitDeclarationOnly",
     "dev": "vite --mode ssr",
+    "glob": "vite --mode ssr --host",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
@@ -47,5 +48,8 @@
     "typescript": "5.0.4",
     "undici": "5.22.1",
     "vite": "4.3.5"
+  },
+  "dependencies": {
+    "simplex-noise": "^4.0.1"
   }
 }
